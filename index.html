@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سبد خرید</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <main class="checkout">
+      <!-- start user -->
+      <section class="user-section">
+        <h1 class="top-header">اطلاعات کاربری <span>شما</span></h1>
+        <!-- header user -->
+        <article class="user-form-header">
+          <h2>اطلاعات تحویل گیرنده</h2>
+          <div class="child-user-form">
+            <div class="form-box">
+              <label for="name" class="input-title">نام و نام خانوادگی</label>
+              <input
+                type="text"
+                placeholder="پرهام جاویدراد"
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-box">
+              <label for="phone" class="input-title">شماره تماس گیرنده</label>
+              <input type="text" placeholder="09123456789" class="form-input" />
+            </div>
+          </div>
+        </article>
+        <!-- end header user -->
+        <!-- footer user -->
+        <article class="main-addres">
+          <div class="child-one-addres">
+            <h2>ادرس تحویل</h2>
+
+            <div class="select-addres">
+              <img src="./assets/image/Vector.svg" alt="پلاس" />
+              <p>انتخاب ادرس</p>
+            </div>
+          </div>
+          <div class="child-user-form">
+            <div class="form-box">
+              <label for="name" class="input-title">استان</label>
+              <input list="list-country" class="form-input" />
+              <datalist id="list-country">
+                <option data-value="data1">تهران</option>
+                <option data-value="data2">کرج</option>
+                <option data-value="data3">شمال</option>
+                <option data-value="data4">تبریز</option>
+              </datalist>
+            </div>
+            <div class="form-box">
+              <label for="city" class="input-title">شهر</label>
+              <input list="city-name" class="form-input" />
+              <datalist id="city-name">
+                <option data-value="data1">تهران</option>
+                <option data-value="data2">ارومیه</option>
+                <option data-value="data3">اردبیل</option>
+                <option data-value="data4">ابهر</option>
+              </datalist>
+            </div>
+          </div>
+          <div class="child-user-form">
+            <div class="form-box">
+              <label for="plack" class="input-title">پلاک</label>
+              <input type="text" placeholder="4" class="form-input" />
+            </div>
+            <div class="form-box">
+              <label for="posti" class="input-title">کد پستی</label>
+              <input type="text" placeholder="0847392" class="form-input" />
+            </div>
+          </div>
+          <div class="child-user-form-new">
+            <label for="neshani" class="input-title">نشانی پستی</label>
+            <textarea class="form-input input-resize" id="neshani"></textarea>
+          </div>
+          <div class="select-model">
+            <div class="select-model-header">
+              <h2 class="text-select-model">انتخاب <span>نحوه ارسال</span></h2>
+              <span class="badge"> 3 محصول در سبد خرید </span>
+            </div>
+
+            <div class="select-model-footer">
+              <label for="radio-input-1" class="form-input new-form">
+                <div class="items-select">
+                  <div class="item-select">
+                    <input
+                      type="radio"
+                      id="radio-input-1"
+                      class="radio-checkbox"
+                      name="on-radio"
+                    />
+                    <label for="radio-input-1" class="title-radio"
+                      >تیپاکس با بیمه ( 1 تا 3 روز کاری )</label
+                    >
+                  </div>
+                  <span class="price"
+                    >450000
+                    <span class="price-mode">تومان</span>
+                  </span>
+                </div>
+              </label>
+
+              <label for="radio-input-2" class="form-input new-form">
+                <div class="items-select">
+                  <div class="item-select">
+                    <input
+                      type="radio"
+                      id="radio-input-2"
+                      class="radio-checkbox"
+                      name="on-radio"
+                    />
+                    <label for="radio-input-2" class="title-radio"
+                      >پست پیشتاز ( 2 تا 6 روز کاری )</label
+                    >
+                  </div>
+                  <span class="price"
+                    >800000
+                    <span class="price-mode">تومان</span>
+                  </span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </article>
+        <!-- end footer user -->
+      </section>
+      <!-- end user -->
+      <!-- start carts -->
+      <section class="cart-section">
+        <h2 class="title-cart-section">
+          <span class="child-title">اطلاعات</span> خرید
+        </h2>
+        <div class="line-header"></div>
+
+        <section class="cards">
+          <article class="card">
+            <div class="main-image">
+              <img
+                class="image-card"
+                src="./assets/image/image 207.png"
+                alt=""
+              />
+            </div>
+            <div class="item-card">
+              <div class="card-header">
+                <div class="main-title-card">
+                  <h4 class="title-card">Hugo Just Different</h4>
+                  <p class="text-card">هوگو بو جاست دیفرنت</p>
+                </div>
+                <span class="size"
+                  >100
+                  <span class="size-model">میل</span>
+                </span>
+              </div>
+
+              <div class="card-footer">
+                <span class="price">
+                  1,550,000
+                  <span class="price-mode">تومان</span>
+                </span>
+
+                <div class="warehouse">
+                  <div class="icon-main plus">+</div>
+                  <div class="icon-main number">1</div>
+                  <div class="icon-main delete">🗑️</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="line-header"></div>
+          <article class="card">
+            <div class="main-image">
+              <img
+                class="image-card"
+                src="./assets/image/image (2).png"
+                alt=""
+              />
+            </div>
+            <div class="item-card">
+              <div class="card-header">
+                <div class="main-title-card">
+                  <h4 class="title-card">Hugo Just Different</h4>
+                  <p class="text-card">هوگو بو جاست دیفرنت</p>
+                </div>
+                <span class="size"
+                  >100
+                  <span class="size-model">میل</span>
+                </span>
+              </div>
+
+              <div class="card-footer">
+                <span class="price">
+                  1,550,000
+                  <span class="price-mode">تومان</span>
+                </span>
+
+                <div class="warehouse">
+                  <div class="icon-main plus">+</div>
+                  <div class="icon-main number">1</div>
+                  <div class="icon-main delete">🗑️</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="line-header"></div>
+          <article class="card">
+            <div class="main-image">
+              <img
+                class="image-card"
+                src="./assets/image/image (3).png"
+                alt=""
+              />
+            </div>
+            <div class="item-card">
+              <div class="card-header">
+                <div class="main-title-card">
+                  <h4 class="title-card">Hugo Just Different</h4>
+                  <p class="text-card">هوگو بو جاست دیفرنت</p>
+                </div>
+                <span class="size"
+                  >100
+                  <span class="size-model">میل</span>
+                </span>
+              </div>
+
+              <div class="card-footer">
+                <span class="price">
+                  1,550,000
+                  <span class="price-mode">تومان</span>
+                </span>
+
+                <div class="warehouse">
+                  <div class="icon-main plus">+</div>
+                  <div class="icon-main number">1</div>
+                  <div class="icon-main delete">🗑️</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div class="total">
+          <div class="total-header">
+            <div class="item-total-header">
+              <span class="total-header-name">خرید شما :</span>
+              <span class="total-header-price"
+                >1,450,000
+                <span>تومان</span>
+              </span>
+            </div>
+            <div class="item-total-header">
+              <span class="total-header-name">هزینه ارسال :</span>
+              <span class="total-header-price"
+                >0
+                <span>تومان</span>
+              </span>
+            </div>
+          </div>
+          <div class="line-header new-line"></div>
+          <div class="item-total-header">
+            <span class="total-header-name color-bk">مبلغ قابل پرداخت :</span>
+            <span class="total-header-price color-bk"
+              >8,450,000
+              <span class="child-total-price">تومان</span>
+            </span>
+          </div>
+
+          <div class="paypal">
+            <img src="./assets/image/Frame 2147224479.svg" alt="" />
+            <h4 class="text-paypal">
+              پرداخت امن با کارت های عضو شتاب از طریق <span class="high-text-paypal">درگاه زیبال</span>
+            </h4>
+          </div>
+
+          <button type="submit" class="btn">پرداخت و خرید محصول</button>
+        </div>
+      </section>
+      <!-- end carts -->
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

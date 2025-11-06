@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Yekan';
+	src:	url('../font/IRANYekanWeb.eot'); /* IE9 Compat Modes */
+	src:	url('Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('../font/IRANYekanWeb.woff2') format('woff2'), /* Modern Browsers */
+			url('../font/IRANYekanWeb.woff') format('woff'), /* Modern Browsers */
+			url('../font/IRANYekanWeb.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
