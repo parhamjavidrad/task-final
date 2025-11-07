@@ -227,15 +227,12 @@ label:has(input[type="radio"]:checked) .items-select {
 }
 @media screen and (min-width:992px) {
     .checkout{
-        grid-template-columns:repeat(5,1fr);
+        grid-template-columns:repeat(2, 1fr);
         border: 1px solid #bbbbbb;
         border-radius: 2rem;
         margin-top: 2rem;
     }
-    .user-section{
-        grid-column: 1/4;
-    }
- 
+  
 }
 @media screen and (max-width:380px) {
     .checkout{
@@ -440,7 +437,7 @@ label:has(input[type="radio"]:checked) .items-select {
 @media screen and (min-width:992px) {
     .cart-section{
         padding: 4rem 2rem;
-        grid-column: 4 / 6;
+        
         max-width: 100%;
     }
     .paypal{
