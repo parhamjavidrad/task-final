@@ -24,7 +24,11 @@
 html{
   font-size: 62.5%;
 }
-
+html,body{
+  
+   max-width: 100%;
+    width: 100%;
+}
 .checkout{
     max-width: 1350px;
     display: grid;
@@ -234,6 +238,9 @@ label:has(input[type="radio"]:checked) .items-select {
  
 }
 @media screen and (max-width:380px) {
+    .checkout{
+        padding: 1rem;
+    }
     .main-addres{
         padding: 0.5rem;
     }
@@ -288,7 +295,9 @@ label:has(input[type="radio"]:checked) .items-select {
     align-items: center;
 }
 .item-card{
+   
     display: flex;
+    
     flex-direction: column;
     gap: 3rem;
     color: var(--color-black);
@@ -333,6 +342,7 @@ label:has(input[type="radio"]:checked) .items-select {
 .image-card{
     width: 8rem;
     height: 8rem;
+ 
 }
 .icon-main{
     width: 5rem;
@@ -430,9 +440,16 @@ label:has(input[type="radio"]:checked) .items-select {
 @media screen and (min-width:992px) {
     .cart-section{
         padding: 4rem 2rem;
-        grid-column: 6/4;
+        grid-column: 4 / 6;
+        max-width: 100%;
     }
     .paypal{
         padding: 1rem 1.5rem ;
     }
+}
+@media screen and (max-width:370px) {
+    .cart-section{
+        padding: 1rem;
+    }
+    
 }
